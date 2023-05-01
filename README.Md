@@ -1,15 +1,14 @@
+Data Cleaning and Manipulation:
 1. column_selection.py
-
 2. sorted_data.py
-
 3. creating_datasets.py
 
-4. model_running.py
+Models:
+1. perceptron_models.py
+2. logregress_models.py
 
-5. model_selection.py
 
-
-Any changes for our data to run is as follows:
+Instructions:
 1. Ensure you have the data downloaded from the Kaggle Link
 2. Make sure the Path Directories are correct
 3. Run column_selection.py
