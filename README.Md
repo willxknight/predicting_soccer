@@ -6,6 +6,7 @@ Data Cleaning and Manipulation:
 Models:
 1. perceptron_models.py
 2. logregress_models.py
+3. models.py
 
 
 Instructions:
@@ -19,5 +20,6 @@ Instructions:
 Note: Manually change the value of N to generate different dataset (they will automatically be nanmed appropriatly)
 9. Ensure the CSV output remains in same folder
 10. Run any model script you'd like:
-    perceptron_models.py
-    logregress_model.py
+    perceptron_models.py            Perceptron
+    logregress_model.py             Logistic Regression
+    models.py                       Decision Tree, KNN
