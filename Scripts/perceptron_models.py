@@ -22,6 +22,8 @@ from sklearn import preprocessing
 from sklearn import utils
 from sklearn.metrics import accuracy_score
 from sklearn.linear_model import Perceptron
+from sklearn.metrics import f1_score
+
 
 def model_assessment(df):
     xFeat = df.iloc[:,1:]
@@ -50,6 +52,8 @@ def main():
     y_hat1 = percept1.predict(xTrain)
     print('Train accuracy score on n = 1:', accuracy_score(yTrain, y_hat1))
     print('Test accuracy score on n = 1:', accuracy_score(yTest, percept1.predict(xTest)))
+    f1 = f1_score(yTest, percept1.predict(xTest), average='micro')
+    print('F1-score on n = 1', f1)
     print()
 
     n_2_data = "data_n_of_2.CSV"
@@ -63,6 +67,8 @@ def main():
     y_hat2 = percept2.predict(xTrain)
     print('Train accuracy score on n = 2:', accuracy_score(yTrain, y_hat2))
     print('Test accuracy score on n = 2:', accuracy_score(yTest, percept2.predict(xTest)))
+    f2 = f1_score(yTest, percept2.predict(xTest), average='micro')
+    print('F1-score on n = 2', f2)
     print()
 
     n_3_data = "data_n_of_3.CSV"
@@ -76,6 +82,8 @@ def main():
     y_hat = percept.predict(xTrain)
     print('Train accuracy score on n = 3:', accuracy_score(yTrain, y_hat))
     print('Test accuracy score on n = 3:', accuracy_score(yTest, percept.predict(xTest)))
+    f3 = f1_score(yTest, percept.predict(xTest), average='micro')
+    print('F1-score on n = 3', f3)
     print()
 
     n_4_data = "data_n_of_4.CSV"
@@ -89,6 +97,8 @@ def main():
     y_hat4 = percept4.predict(xTrain)
     print('Train accuracy score on n = 4:', accuracy_score(yTrain, y_hat4))
     print('Test accuracy score on n = 4:', accuracy_score(yTest, percept4.predict(xTest)))
+    f4 = f1_score(yTest, percept4.predict(xTest), average='micro')
+    print('F1-score on n = 4', f4)
     print()
 
     n_5_data = "data_n_of_5.CSV"
@@ -102,6 +112,8 @@ def main():
     y_hat5 = percept5.predict(xTrain)
     print('Train accuracy score on n = 5:', accuracy_score(yTrain, y_hat5))
     print('Test accuracy score on n = 5:', accuracy_score(yTest, percept5.predict(xTest)))
+    f5 = f1_score(yTest, percept5.predict(xTest), average='micro')
+    print('F1-score on n = 5', f5)
     print()
 
     n_6_data = "data_n_of_6.CSV"
@@ -115,6 +127,8 @@ def main():
     y_hat6 = percept6.predict(xTrain)
     print('Train accuracy score on n = 6:', accuracy_score(yTrain, y_hat6))
     print('Test accuracy score on n = 6:', accuracy_score(yTest, percept6.predict(xTest)))
+    f6 = f1_score(yTest, percept6.predict(xTest), average='micro')
+    print('F1-score on n = 6', f6)
     print()
 
     n_7_data = "data_n_of_7.CSV"
@@ -128,6 +142,8 @@ def main():
     y_hat7 = percept7.predict(xTrain)
     print('Train accuracy score on n = 7:', accuracy_score(yTrain, y_hat7))
     print('Test accuracy score on n = 7:', accuracy_score(yTest, percept7.predict(xTest)))
+    f7 = f1_score(yTest, percept7.predict(xTest), average='micro')
+    print('F1-score on n = 7', f7)
     print()
 
 if __name__ == "__main__":
